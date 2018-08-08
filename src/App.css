@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=BioRhyme:400,800|Cabin");
+@import url("https://fonts.googleapis.com/css?family=Istok+Web|Montserrat:400,800,900");
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+/* remove mozilla's stupid outline on clicked links... */
+:focus {
+  outline: none; }
+
+::-moz-focus-inner {
+  border: 0; }
+
+* {
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  color: #CAD3C8; }
+
+p, ul {
+  font-family: "Istok Web", sans-serif;
+  color: #CAD3C8; }
+
+.toggle-menu {
+  display: none; }
+
+.topbar {
+  display: -webkit-flex;
+  display: flex;
+  position: absolute;
+  height: 60px;
+  width: 100vw;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row; }
+  .topbar .nav-link {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 0.85em;
+    margin: 0px 20px 0px 20px;
+    z-index: 1000; }
+    .topbar .nav-link a {
+      color: #CAD3C8;
+      text-decoration: none; }
+
+body {
+  background-color: #2C3A47;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  width: 100vw; }
+
+.content-wrapper {
+  display: -webkit-flex;
+  display: flex;
+  height: calc(100vh - 60px);
+  flex-direction: column;
+  align-items: center; }
+
+.home-title {
+  justify-content: center; }
+
+.route-body {
+  padding-top: 60px;
+  width: 85%; }
+
+.content {
+  width: 100%; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.fade-in {
+  animation: fadeIn 2000ms forwards; }
+
+.center-text {
+  text-align: center; }
+
+@media screen and (min-width: 768px) {
+  .route-body {
+    width: 60%; } }
+
+.nav-link-active {
+  color: red; }
+
+.work-history h1, .work-history h2, .work-history h3, .work-history h4 {
+  margin: 0;
+  padding: 0; }
